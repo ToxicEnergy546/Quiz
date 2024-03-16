@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tschick Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Tschick Quiz</h1>
+  <form id="quizForm">
+    <div>
+      <p>Frage 1: Wer sind die Hauptfiguren in 'Tschick'?</p>
+      <label><input type="radio" name="q1" value="a"> Maik Klingenberg und Isa Schmidt</label>
+      <label><input type="radio" name="q1" value="b"> Andrej Tschichatschow und Tatjana Koltunow</label>
+      <label><input type="radio" name="q1" value="c"> Maik Klingenberg und Andrej Tschichatschow</label>
+      <label><input type="radio" name="q1" value="d"> Isa Schmidt und Tschick</label>
+    </div>
+
+    <div>
+      <p>Frage 2: Warum macht sich Maik Klingenberg zu Beginn der Geschichte auf den Weg mit Tschick?</p>
+      <label><input type="radio" name="q2" value="a"> Er möchte eine abenteuerliche Reise erleben.</label>
+      <label><input type="radio" name="q2" value="b"> Er will vor seiner Mutter fliehen.</label>
+      <label><input type="radio" name="q2" value="c"> Sein Vater hat ihm befohlen, wegzugehen.</label>
+      <label><input type="radio" name="q2" value="d"> Er möchte seinen Freund Isa beeindrucken.</label>
+    </div>
+
+    <div>
+      <p>Frage 3: Welches Fortbewegungsmittel nutzen Maik und Tschick auf ihrer Reise?</p>
+      <label><input type="radio" name="q3" value="a"> Ein gestohlenes Auto</label>
+      <label><input type="radio" name="q3" value="b"> Fahrräder</label>
+      <label><input type="radio" name="q3" value="c"> Ein Motorrad</label>
+      <label><input type="radio" name="q3" value="d"> Ein Boot</label>
+    </div>
+
+    <div>
+      <p>Frage 4: Wohin führt die Reise von Maik und Tschick hauptsächlich?</p>
+      <label><input type="radio" name="q4" value="a"> Nach Berlin</label>
+      <label><input type="radio" name="q4" value="b"> In die Türkei</label>
+      <label><input type="radio" name="q4" value="c"> Durch Deutschland, ohne festes Ziel</label>
+      <label><input type="radio" name="q4" value="d"> Nach Frankreich</label>
+    </div>
+
+    <div>
+      <p>Frage 5: Wie wird Tschick von den anderen Schülern anfangs wahrgenommen?</p>
+      <label><input type="radio" name="q5" value="a"> Als unbeliebter Außenseiter</label>
+      <label><input type="radio" name="q5" value="b"> Als reicher Schnösel</label>
+      <label><input type="radio" name="q5" value="c"> Als cooler Neuer, der schnell Freunde findet</label>
+      <label><input type="radio" name="q5" value="d"> Als Streber</label>
+    </div>
+
+    <div>
+      <p>Frage 6: Welche Rolle spielt das Thema Freundschaft in 'Tschick'?</p>
+      <label><input type="radio" name="q6" value="a"> Maik und Tschick werden Feinde am Ende der Geschichte.</label>
+      <label><input type="radio" name="q6" value="b"> Tschick opfert sich für Maik.</label>
+      <label><input type="radio" name="q6" value="c"> Maik und Tschick werden beste Freunde.</label>
+      <label><input type="radio" name="q6" value="d"> Tschick entpuppt sich als Verräter.</label>
+    </div>
+
+    <div>
+      <p>Frage 7: Warum hat Tschick die Reise unternommen?</p>
+      <label><input type="radio" name="q7" value="a"> Er hat seinen Eltern entkommen wollen.</label>
+      <label><input type="radio" name="q7" value="b"> Er sucht nach seinem Bruder, der verschwunden ist.</label>
+      <label><input type="radio" name="q7" value="c"> Tschick hat keine klare Motivation für die Reise.</label>
+      <label><input type="radio" name="q7" value="d"> Er möchte ein berühmter Abenteurer werden.</label>
+    </div>
+
+    <div>
+      <p>Frage 8: Was ist das zentrale Thema von 'Tschick'?</p>
+      <label><input type="radio" name="q8" value="a"> Die Suche nach Identität</label>
+      <label><input type="radio" name="q8" value="b"> Die Bedeutung von Freundschaft</label>
+      <label><input type="radio" name="q8" value="c"> Die Liebe zwischen Maik und Isa</label>
+      <label><input type="radio" name="q8" value="d"> Die Gefahren von Drogenkonsum</label>
+    </div>
+
+    <div>
+      <p>Frage 9: Wie endet die Geschichte von 'Tschick'?</p>
+      <label><input type="radio" name="q9" value="a"> Maik und Tschick kehren unbeschadet nach Hause zurück.</label>
+      <label><input type="radio" name="q9" value="b"> Tschick stirbt tragisch am Ende der Reise.</label>
+      <label><input type="radio" name="q9" value="c"> Maik wird von der Polizei festgenommen.</label>
+      <label><input type="radio" name="q9" value="d"> Das Buch endet mit einem offenen Schluss, der Interpretationen zulässt.</label>
+    </div>
+
+    <div>
+      <p>Frage 10: Was symbolisiert der gestohlene Lada, den Maik und Tschick fahren?</p>
+      <label><input type="radio" name="q10" value="a"> Freiheit und Abenteuer</label>
+      <label><input type="radio" name="q10" value="b"> Kriminalität und Unverantwortlichkeit</label>
+      <label><input type="radio" name="q10" value="c"> Umweltbewusstsein</label>
+      <label><input type="radio" name="q10" value="d"> Das Streben nach Wohlstand</label>
+    </div>
+
+    <div id="quizResult"></div> <!-- Ergebnisfeld über dem Button -->
+  </form>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const quizForm = document.getElementById('quizForm');
+      const submitButton = document.createElement('input');
+      submitButton.type = 'submit';
+      submitButton.value = 'Quiz abschicken';
+      submitButton.style.display = 'none'; // Button ist anfangs unsichtbar
+      quizForm.appendChild(submitButton); // Fügt den Button zum Formular hinzu
+
+      const radioButtons = quizForm.querySelectorAll('input[type="radio"]');
+
+      function updateButtonVisibility() {
+        // Zähle, wie viele Radio-Buttons ausgewählt wurden
+        const checkedCount = Array.from(radioButtons).filter(radio => radio.checked).length;
+
+        // Wenn mindestens 10 Radio-Buttons ausgewählt wurden, zeige den Button an
+        if (checkedCount >= 10) {
+          submitButton.style.display = 'block';
+          submitButton.style.margin = '20px auto'; // Zentriert den Button unter den Fragen
+          submitButton.style.padding = '10px 20px';
+          submitButton.style.fontSize = '18px';
+          submitButton.style.color = '#ffffff';
+          submitButton.style.backgroundColor = '#007BFF';
+          submitButton.style.border = 'none';
+          submitButton.style.borderRadius = '5px';
+          submitButton.style.cursor = 'pointer';
+        } else {
+          submitButton.style.display = 'none';
+        }
+      }
+
+      // Füge einen Event-Listener zu jedem Radio-Button hinzu, um die Sichtbarkeit des Buttons zu aktualisieren
+      radioButtons.forEach(radio => radio.addEventListener('change', updateButtonVisibility));
+
+      // Initialer Aufruf, um den Button basierend auf dem aktuellen Zustand zu aktualisieren
+      updateButtonVisibility();
+    });
+
+    const quizData = [
+      { question: "Wer sind die Hauptfiguren in 'Tschick'?", answers: ["a", "b", "c", "d"], correctAnswer: "c" },
+      { question: "Warum macht sich Maik Klingenberg zu Beginn der Geschichte auf den Weg mit Tschick?", answers: ["a", "b", "c", "d"], correctAnswer: "b" },
+      { question: "Welches Fortbewegungsmittel nutzen Maik und Tschick auf ihrer Reise?", answers: ["a", "b", "c", "d"], correctAnswer: "a" },
+      { question: "Wohin führt die Reise von Maik und Tschick hauptsächlich?", answers: ["a", "b", "c", "d"], correctAnswer: "c" },
+      { question: "Wie wird Tschick von den anderen Schülern anfangs wahrgenommen?", answers: ["a", "b", "c", "d"], correctAnswer: "c" },
+      { question: "Welche Rolle spielt das Thema Freundschaft in 'Tschick'?", answers: ["a", "b", "c", "d"], correctAnswer: "c" },
+      { question: "Warum hat Tschick die Reise unternommen?", answers: ["a", "b", "c", "d"], correctAnswer: "c" },
+      { question: "Was ist das zentrale Thema von 'Tschick'?", answers: ["a", "b", "c", "d"], correctAnswer: "b" },
+      { question: "Wie endet die Geschichte von 'Tschick'?", answers: ["a", "b", "c", "d"], correctAnswer: "d" },
+      { question: "Was symbolisiert der gestohlene Lada, den Maik und Tschick fahren?", answers: ["a", "b", "c", "d"], correctAnswer: "a" },
+    ];
+
+    const quizForm = document.getElementById('quizForm');
+    const resultContainer = document.getElementById('quizResult');
+
+    quizForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const formData = new FormData(quizForm);
+      const answers = Object.fromEntries(formData.entries());
+      let score = 0;
+      quizData.forEach(question => {
+        if (answers[question.question] === question.correctAnswer) {
+          score++;
+        }
+      });
+
+      resultContainer.innerHTML = `Dein Ergebnis: ${score} von ${quizData.length}`;
+      resultContainer.style.marginTop = '20px';
+
+      let feedbackMessage = '';
+      if (score === quizData.length) {
+        feedbackMessage = 'Perfekt! Du hast alle Fragen richtig beantwortet. Herzlichen Glückwunsch!';
+      } else if (score >= quizData.length / 2) {
+        feedbackMessage = 'Gute Leistung! Du hast mehr als die Hälfte der Fragen richtig beantwortet.';
+      } else {
+        feedbackMessage = 'Das war nicht so gut. Versuche es doch noch einmal.';
+      }
+
+      alert(feedbackMessage);
+    });
+  </script>
+</body>
+</html>

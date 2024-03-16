@@ -1,0 +1,93 @@
+/* 
+  Stildefinitionen für das Aussehen des Quiz-Formulars.
+  Hier werden Farben, Abstände und Animationen festgelegt.
+*/
+
+body {
+  font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', sans-serif;
+  margin: 20px;
+  background-color: #abf8fa;
+  text-align: center;
+}
+
+#quizForm {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 20px; /* Erhöhter Abstand zwischen den Fragen */
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Sanfter Übergang für Transformation und Schatten */
+  backface-visibility: hidden; /* Kann helfen, die Schärfe bei der Transformation zu verbessern */
+}
+
+label:hover {
+  transform: scale(1.05); /* Vergrößert das Element um 5% */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Dunklerer und größerer Schatten */
+}
+
+input[type="submit"] {
+  display: none; /* Button ist anfangs nicht sichtbar */
+}
+
+#quizResult {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+  display: block; /* Anzeige des Ergebnisfelds */
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+
+/* Stildefinition für die Meldung bei nicht angekreuzter Antwort */
+#quizForm:invalid {
+  border: 2px solid red; /* Roter Rahmen um das Formular */
+}
+
+#quizForm:invalid label {
+  background-color: #ffcccc; /* Hintergrundfarbe für nicht angekreuzte Antwort */
+}
+
+#quizForm:invalid input[type="submit"] {
+  display: none; /* Ausblenden des Submit-Buttons bei nicht angekreuzter Antwort */
+}
+
+/* Zusätzliche Stile für den Quiz-Button und das Ergebnis */
+#submitButton {
+  display: block; /* Stellt sicher, dass der Button als Block-Element angezeigt wird */
+  margin: 20px auto; /* Zentriert den Button horizontal und fügt oben und unten Abstand hinzu */
+  padding: 12px 25px; /* Vergrößert den Button und macht ihn bequemer zu klicken */
+  font-size: 18px; /* Vergrößert die Schriftgröße für bessere Lesbarkeit */
+  color: #ffffff; /* Setzt die Textfarbe auf Weiß */
+  background-color: #007BFF; /* Setzt die Hintergrundfarbe des Buttons */
+  border: none; /* Entfernt den Standard-Rand */
+  border-radius: 5px; /* Fügt abgerundete Ecken hinzu */
+  cursor: pointer; /* Zeigt einen Zeiger-Cursor, wenn der Benutzer über den Button fährt */
+}
+
+#submitButton:hover {
+  background-color: #0056b3; /* Dunklere Hintergrundfarbe beim Hover */
+}
+
+#quizResult {
+  margin-top: 20px; /* Fügt Abstand zwischen dem Button und dem Ergebnis hinzu */
+  /* Füge hier zusätzliche Stile für das Ergebnis hinzu, falls gewünscht */
+}
