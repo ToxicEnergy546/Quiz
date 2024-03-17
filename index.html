@@ -152,11 +152,11 @@
       const formData = new FormData(quizForm);
       const answers = Object.fromEntries(formData.entries());
       let score = 0;
+      console.log(score)
       
       quizData.forEach(question => {
         if (answers[question.question] === question.correctAnswer) {
           score++;
-        console.log(score)
         }
       });
 
