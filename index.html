@@ -100,9 +100,8 @@
       submitButton.value = 'Quiz abschicken';
       submitButton.style.display = 'none'; // Button ist anfangs unsichtbar
       quizForm.appendChild(submitButton); // Fügt den Button zum Formular hinzu
-
       const radioButtons = quizForm.querySelectorAll('input[type="radio"]');
-
+      onclick="checkAnswer()"
       function updateButtonVisibility() {
         // Zähle, wie viele Radio-Buttons ausgewählt wurden
         const checkedCount = Array.from(radioButtons).filter(radio => radio.checked).length;
