@@ -158,7 +158,9 @@
         }
       });
 
-      resultContainer.innerHTML = `Dein Ergebnis: ${score} von ${quizData.length}`;
+       // Ergebnis anzeigen
+       const resultElement = document.getElementById('quizResult');
+      resultElement.textContent = `Dein Punktestand ist: ${score} von ${quizData.length}`;
       resultContainer.style.marginTop = '20px';
 
       let feedbackMessage = '';
@@ -175,3 +177,5 @@
   </script>
 </body>
 </html>
+
+<console class="log"></console>
